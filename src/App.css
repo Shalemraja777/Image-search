@@ -1,0 +1,36 @@
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-item {
+  margin: 10px;
+  position: relative;
+}
+
+.image-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.image-details {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  text-align: left;
+  padding: 5px;
+  display: none;
+}
+
+.image-item:hover .image-details {
+  display: block;
+}
